@@ -1,0 +1,8 @@
+body {
+  background-image: linear-gradient(to right, #9a9385, #c5bfa7, #e6dbc8);
+}
+
+.breed-select {
+  width: 180px;
+  height: 32;
+}
