@@ -1,0 +1,1 @@
+{"mappings":"AAAgBA,SAASC,cAAc,UAC/BC,QAAS","sources":["src/index.js"],"sourcesContent":["const textErr = document.querySelector('.error');\ntextErr.hidden = true;\n"],"names":["document","querySelector","hidden"],"version":3,"file":"index.89760e44.js.map"}
