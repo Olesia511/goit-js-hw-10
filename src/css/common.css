@@ -36,15 +36,19 @@ body {
   font-weight: 600;
   background-image: linear-gradient(to right, #9a9385, #c5bfa7, #e6dbc8);
 }
-
-img {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 400px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .breed-select {
   padding-left: 16px;
+  margin-left: 16px;
   font-size: 20px;
   color: #673147;
   width: 80%;
@@ -58,6 +62,7 @@ img {
   background-color: #673147;
   width: 70%;
   padding: 16px;
+  margin: 16px;
   font-size: 20px;
   color: #e8ecef;
   font-weight: 500;
@@ -68,20 +73,32 @@ img {
   background-color: #bfa38a;
   width: 70%;
   padding: 16px;
+  margin: 16px;
   font-size: 20px;
   color: #482f17;
   font-weight: 500;
   border-radius: 12px;
 }
 
+.cat-info img {
+  width: 300px;
+  background-size: auto;
+  border-radius: 15%;
+}
+
 .cat-info.hidden {
   display: none;
 }
 
-.cat-info img {
-  border-radius: 15%;
-}
 .cat-info {
+  display: flex;
+  column-gap: 16px;
+
+  align-items: flex-start;
+  margin: 16px;
   font-size: 24px;
   color: #471e2f;
+}
+
+.cat-temperament {
 }
