@@ -13,6 +13,7 @@ export function createSelectMarkup(arr) {
 export function createCard(cat) {
   const { url } = cat;
   const { name, origin, description, temperament } = cat.breeds[0];
+
   const catCard = `<img src="${url}" alt="${name}" />
         <h2>${name}</h2>
         <h4>Country: ${origin}</h4>

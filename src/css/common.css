@@ -44,6 +44,7 @@ img {
 }
 
 .breed-select {
+  padding-left: 16px;
   font-size: 20px;
   color: #673147;
   width: 80%;

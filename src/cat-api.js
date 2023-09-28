@@ -10,10 +10,13 @@ export function fetchBreeds() {
   return axios
     .get(`${BASE_URL}${ENDPOINT}`)
     .then(resp => {
+      if (!resp.data) {
+        throw new Error(resp.statusText);
+      }
       return resp.data;
     })
     .catch(err => {
-      console.log(`err`, err);
+      console.log(`fetchBreeds error`, err);
     });
 }
 
@@ -21,9 +24,12 @@ export function fetchCatByBreed(breedId) {
   return axios
     .get(`${BASE_URL}${ENDPOINT_ID}?breed_ids=${breedId}`)
     .then(respId => {
+      if (!respId.data[0]) {
+        throw new Error(respId.statusText);
+      }
       return respId.data[0];
     })
     .catch(err => {
-      console.log(`err`, err);
+      console.log(`fetchCatByBreed error`, err);
     });
 }
